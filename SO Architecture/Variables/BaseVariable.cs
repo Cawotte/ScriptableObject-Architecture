@@ -63,6 +63,8 @@ namespace ScriptableObjectArchitecture
             }
         }
 
+        public T OldValue { get { return _oldValue; } }
+
         public override bool Clampable { get { return false; } }
         public override bool ReadOnly { get { return _readOnly; } }
         public override bool IsClamped { get { return _isClamped; } }
